@@ -1,0 +1,384 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+
+/* Start of nav Search bar with HTML drop down*/
+
+.devsite-search-wrapper {
+    background: #546e7a;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 7px; /*Added*/
+    max-width: 872px;
+    position: relative;
+    transition: background .2s;
+    vertical-align: top;
+    width: calc(100% - 496px);
+
+}
+
+    .devsite-search-wrapper:hover {
+        background: #78909c;
+    }
+
+    .devsite-search-wrapper.devsite-search-active {
+        background: #fff;
+    }
+
+.devsite-searchbox {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.devsite-search-image {
+    background: url('../images/redesign-14/search-btn-white.svg'),url('../images/redesign-14/search-btn-black.svg') 24px no-repeat;
+    height: 24px;
+    left: 24px;
+    position: absolute;
+    top: 6px;
+    transition: background .2s;
+    width: 24px;
+}
+
+.devsite-search-active .devsite-search-image {
+    background: url('../images/redesign-14/search-btn-black.svg');
+}
+
+input.devsite-search-field {
+    background: 0;
+    border: 0;
+    color: #fff;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    height: 36px;
+    margin: 0;
+    padding: 8px 8px 8px 72px;
+    transition: color .2s;
+    width: 100%;
+}
+
+.devsite-search-active .devsite-search-field {
+    color: #212121;
+}
+
+input.devsite-search-field:focus {
+    border: 0;
+    padding-bottom: 8px;
+}
+
+.devsite-search-form ::-webkit-input-placeholder {
+    color: #fff;
+    transition: color .2s;
+}
+
+.devsite-search-form :-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    transition: color .2s;
+}
+
+.devsite-search-form ::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    transition: color .2s;
+}
+
+.devsite-search-form :-ms-input-placeholder {
+    color: #fff;
+    transition: color .2s;
+}
+
+.devsite-search-active .devsite-search-form ::-webkit-input-placeholder {
+    color: #757575;
+}
+
+.devsite-search-active .devsite-search-form :-moz-placeholder {
+    color: #757575;
+    opacity: 1;
+}
+
+.devsite-search-active .devsite-search-form ::-moz-placeholder {
+    color: #757575;
+    opacity: 1;
+}
+
+.devsite-search-active .devsite-search-form :-ms-input-placeholder {
+    color: #757575;
+}
+
+.devsite-search-chip {
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 15px;
+    color: #fff;
+    cursor: default;
+    display: inline-block;
+    float: left;
+    font: 13px/28px Roboto,sans-serif;
+    height: 30px;
+    margin: 3px 0 0 64px;
+    max-width: 200px;
+    overflow: hidden;
+    padding: 0 8px 0 12px;
+    position: relative;
+    text-overflow: ellipsis;
+    transition: background .2s,border .2s,color .2s;
+    white-space: nowrap;
+}
+
+.devsite-search-active .devsite-search-chip {
+    background: #ebebeb;
+    border-color: transparent;
+    color: #616161;
+}
+
+.devsite-search-chip-close {
+    background: url('../images/redesign-14/cancel.svg'),url('../images/redesign-14/cancel-grey.svg') 20px no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    margin: 4px -4px 0 0;
+    opacity: .54;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    transition: background .2s,opacity .2s;
+    width: 20px;
+}
+
+.devsite-search-chip::before {
+    content: "";
+    float: right;
+    height: 20px;
+    margin: 4px -4px 0 0;
+    width: 20px;
+}
+
+.devsite-search-active .devsite-search-chip::before {
+    background: url('../images/redesign-14/cancel-grey.svg');
+    opacity: .65;
+}
+
+.devsite-search-chip::after {
+    content: "";
+    margin-left: 8px;
+}
+
+.devsite-search-chip + .devsite-search-field {
+    padding-left: 16px;
+    width: calc(100% - 264px);
+}
+
+.devsite-search-button {
+    background: url('../images/redesign-14/search-btn-white.svg'),url('../images/redesign-14/cancel.svg') 24px transparent no-repeat;
+    display: none;
+    float: right;
+    height: 24px;
+    margin: 7px 16px;
+    min-width: 24px;
+    opacity: .7;
+    text-indent: -9999px;
+    top: 0;
+    width: 24px;
+}
+
+.devsite-search-button-dismissal {
+    background: url('../images/redesign-14/cancel.svg') 0%/24px transparent;
+    margin: 6px 0;
+}
+
+.devsite-search-button:focus, .devsite-search-button:hover:not(:disabled), .devsite-search-button:active:not(:disabled) {
+    background-color: transparent;
+    opacity: 1;
+}
+
+@media screen and (max-width:1000px) {
+    .devsite-search-wrapper {
+        margin-left: 24px;
+        width: calc(100% - 256px);
+    }
+
+    .devsite-search-image {
+        display: none;
+    }
+
+    input.devsite-search-field {
+        padding-left: 8px;
+    }
+
+    .devsite-search-chip {
+        margin: 3px 0 0 3px;
+        max-width: 140px;
+    }
+
+        .devsite-search-chip + .devsite-search-field {
+            width: calc(100% - 204px);
+        }
+}
+
+@media screen and (max-width:720px) {
+    .devsite-search-wrapper {
+        display: none;
+        margin-left: 0;
+        width: calc(100% - 40px);
+    }
+
+    .devsite-search-button, .devsite-search-button:active:not(:disabled), .devsite-search-button:focus:not(:disabled), .devsite-search-button:hover:not(:disabled) {
+        display: block;
+    }
+}
+
+.devsite-popout {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    margin-top: 10px;
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+    position: absolute;
+    transition: transform .2s,visibility .2s;
+    transform: translateY(0);
+    width: 100%;
+    z-index: -1;
+}
+
+.devsite-popout-closed {
+    transform: translateY(-110%);
+    visibility: hidden;
+}
+
+.devsite-history-container, .devsite-suggest-container {
+    box-shadow: inset 0 4px 6px -4px rgba(0,0,0,.24);
+    overflow: auto;
+}
+
+.devsite-history-side-column, .devsite-suggest-side-column {
+    float: left;
+    width: 72px;
+}
+
+.devsite-history-icon, .devsite-suggest-icon {
+    background: url('../images/redesign-14/history.svg');
+    display: block;
+    height: 24px;
+    margin: 16px auto;
+    width: 24px;
+}
+
+.devsite-suggest-icon {
+    background: url('../images/redesign-14/search-btn-black.svg');
+}
+
+.devsite-history-main-column, .devsite-suggest-main-column {
+    font-size: 14px;
+    float: right;
+    width: calc(100% - 72px);
+    margin-top: 16px;
+}
+
+.devsite-history-column {
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 8px)/2);
+}
+
+    .devsite-history-column + .devsite-history-column {
+        margin-left: 8px;
+    }
+
+.devsite-suggest-results {
+    outline: 0;
+}
+
+.devsite-suggest-category {
+    margin: 0;
+}
+
+    .devsite-suggest-category label {
+        border-top: 1px solid #ebebeb;
+        margin: 8px 0 0;
+        padding-top: 12px;
+    }
+
+    .devsite-suggest-category:first-of-type label {
+        border: 0;
+        margin: 0;
+        padding-top: 0;
+    }
+
+.devsite-history-item, .devsite-suggest-item {
+    font: 13px/20px Roboto,sans-serif;
+    margin: 0;
+}
+
+    .devsite-history-item a, .devsite-suggest-item a {
+        color: #212121;
+        display: block;
+        margin-left: -8px;
+        outline: 0;
+        padding: 8px;
+        transition: background .2s;
+    }
+
+        .devsite-history-item.goog-menuitem-highlight a, .devsite-history-item a:focus, .devsite-suggest-item a.ui-state-focus {
+            background: #f7f7f7;
+            text-decoration: none;
+        }
+
+    .devsite-suggest-item b {
+        font-weight: 500;
+    }
+
+.devsite-history-footer, .devsite-suggest-all-results {
+    border-top: 1px solid #ebebeb;
+    margin: 8px 0 0;
+    padding: 7px 0 8px;
+}
+
+    .devsite-history-preferences-link, .devsite-suggest-all-results a {
+        margin-left: -8px;
+    }
+
+.devsite-suggestion-reference-path {
+    display: inline-block;
+    font-family: monospace;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+@media screen and (max-width:720px) {
+    .devsite-popout {
+        margin-left: -72px;
+        width: calc(100% + 130px);
+    }
+
+    .devsite-history-item, .devsite-suggest-item {
+        font: 16px/22px Roboto,sans-serif;
+    }
+
+    .devsite-suggest-category label {
+        font: 14px/22px Roboto,sans-serif;
+    }
+}
+
+
+
+
+/* End of nav Search bar with HTML drop down*/
