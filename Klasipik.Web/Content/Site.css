@@ -1,6 +1,41 @@
-﻿body {
+﻿/* Sticky footer styles
+    http://getbootstrap.com/examples/sticky-footer-navbar/
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+    margin-bottom: 240px; /*Set this equal to .footer height*/
     padding-top: 50px;
     padding-bottom: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 240px;
+  background-color: #455a64;
+
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* end of Sticky footer styles*/
+
+/*
+Shadow for navbar
+    Generated using: http://www.cssmatic.com/box-shadow
+*/
+.shadow {
+    -webkit-box-shadow: 0px 2px 15px 0.3px rgba(69,90,100,0.92);
+    -moz-box-shadow: 0px 2px 15px 0.3px rgba(69,90,100,0.92);
+    box-shadow: 0px 2px 15px 0.3px rgba(69,90,100,0.92);
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -8,6 +43,8 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -17,6 +54,113 @@
 }
 
 
+
+/*Custom Navbar
+    Generated using
+    http://twitterbootstrap3navbars.w3masters.nl/?color=%23455a64&linkcolor=%23fff&activelinkcolor=%23c0c0c0&gradient=0&borders=0
+*/
+.navbar-custom {
+  background-color: #455a64;
+  border-color: #374850;
+  border-bottom-width: 0px;
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #e6e6e6;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #c0c0c0;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #c0c0c0;
+  background-color: #374850;
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #36474f;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #374850;
+  color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #c0c0c0;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #c0c0c0;
+    background-color: #374850;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+  color: #c0c0c0;
+}
+
+
+/*End of custom navbar*/
 
 /* Start of nav Search bar with HTML drop down*/
 
@@ -383,4 +527,3 @@ input.devsite-search-field:focus {
 
 
 
-/* End of nav Search bar with HTML drop down*/
