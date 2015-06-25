@@ -31,7 +31,7 @@
     transition: background .2s;
     vertical-align: top;
     width: calc(100% - 496px);
-
+    /*z-index:1031;*/
 }
 
     .devsite-search-wrapper:hover {
@@ -49,7 +49,7 @@
 }
 
 .devsite-search-image {
-    background: url('../images/redesign-14/search-btn-white.svg'),url('../images/redesign-14/search-btn-black.svg') 24px no-repeat;
+    /*background: url('../images/redesign-14/search-btn-white.svg'),url('../images/redesign-14/search-btn-black.svg') 24px no-repeat;*/
     height: 24px;
     left: 24px;
     position: absolute;
@@ -57,9 +57,11 @@
     transition: background .2s;
     width: 24px;
 }
-
+.add-margin-top {
+    margin-top:3px;
+}
 .devsite-search-active .devsite-search-image {
-    background: url('../images/redesign-14/search-btn-black.svg');
+    /*background: url('../images/redesign-14/search-btn-black.svg');*/
 }
 
 input.devsite-search-field {
@@ -275,7 +277,7 @@ input.devsite-search-field:focus {
 }
 
 .devsite-history-icon, .devsite-suggest-icon {
-    background: url('../images/redesign-14/history.svg');
+    /*background: url('../images/redesign-14/history.svg');*/
     display: block;
     height: 24px;
     margin: 16px auto;
@@ -283,7 +285,7 @@ input.devsite-search-field:focus {
 }
 
 .devsite-suggest-icon {
-    background: url('../images/redesign-14/search-btn-black.svg');
+    /*background: url('../images/redesign-14/search-btn-black.svg');*/
 }
 
 .devsite-history-main-column, .devsite-suggest-main-column {
