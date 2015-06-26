@@ -43,6 +43,7 @@ body {
 }
 
 /*End of Full width banner*/
+
 /*
 Box shadow for navbar
     Generated using: http://www.cssmatic.com/box-shadow
@@ -68,6 +69,21 @@ Box shadow for navbar
 .dl-horizontal dt {
     white-space: normal;
 }
+
+/*
+     Fix navbar container height to prevent it from collapsing 2 rows
+*/
+@media(min-width:767px){
+    .navbar{
+        height:50px;
+    }
+}
+
+
+/*
+    End of Fix navbar container height to prevent it from collapsing 2 rows
+*/
+
 
 /* Start of nav Search bar with HTML drop down*/
 
@@ -226,7 +242,7 @@ input.devsite-search-field:focus {
 }
 
 .devsite-search-active .devsite-search-chip::before {
-    background: url('../images/redesign-14/cancel-grey.svg');
+    /*background: url('../images/redesign-14/cancel-grey.svg');*/
     opacity: .65;
 }
 
@@ -241,7 +257,7 @@ input.devsite-search-field:focus {
 }
 
 .devsite-search-button {
-    background: url('../images/redesign-14/search-btn-white.svg'),url('../images/redesign-14/cancel.svg') 24px transparent no-repeat;
+    /*background: url('../images/redesign-14/search-btn-white.svg'),url('../images/redesign-14/cancel.svg') 24px transparent no-repeat;*/
     display: none;
     float: right;
     height: 24px;
@@ -254,7 +270,7 @@ input.devsite-search-field:focus {
 }
 
 .devsite-search-button-dismissal {
-    background: url('../images/redesign-14/cancel.svg') 0%/24px transparent;
+    /*background: url('../images/redesign-14/cancel.svg') 0%/24px transparent;*/
     margin: 6px 0;
 }
 
