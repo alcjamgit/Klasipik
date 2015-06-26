@@ -12,17 +12,15 @@ body {
     padding-bottom: 20px;
 }
 
-.navbar {
-
-}
-
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 240px;
-  background-color: #424242;
+    color:#9E9E9E;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    min-height: 240px;
+
+    background-color: #424242;
 
 }
 
@@ -32,8 +30,21 @@ body {
 }
 /* end of Sticky footer styles*/
 
+/*Start of Full width banner*/
+.full-width-container {
+    /*position:relative;*/
+    /*margin: 0 auto;*/
+    width: 100%;
+    color:#fff;
+    /* Set the fixed height of the footer here */
+    min-height: 120px;
+    background-color: #26A69A;
+
+}
+
+/*End of Full width banner*/
 /*
-Shadow for navbar
+Box shadow for navbar
     Generated using: http://www.cssmatic.com/box-shadow
 */
 .shadow {
