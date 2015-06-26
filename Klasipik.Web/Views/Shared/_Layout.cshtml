@@ -21,7 +21,8 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div class="pull-left">
-                @Html.ActionLink("Klasimo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("K", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-md hidden-lg hidden-sm" })
+                @Html.ActionLink("Klasimo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-xs" })
                 <button class="navbar-btn pull-left btn btn-primary">
                     <span class="glyphicon glyphicon-plus aria-hidden="true"></span>
                 <span class="hidden-xs">Post Ad</span></button>
