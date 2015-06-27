@@ -158,6 +158,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Advertisement\AdvertisementAreaRegistration.cs" />
+    <Compile Include="Areas\Advertisement\Controllers\ListingController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdvertisementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -172,19 +174,26 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\banner-full.css" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrapOld.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\image-aspect-ratio.css" />
+    <Content Include="Content\styleArchives\bootstrapOld.css" />
+    <Content Include="Content\styleArchives\bootstrap.min.css" />
     <Content Include="Content\footer.css" />
-    <Content Include="Content\nav-search-bar.css" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\navbar-search.css" />
+    <Content Include="Content\common.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\SiteOld.css" />
+    <Content Include="Content\styleArchives\SiteOld.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\customized-bootstrap-teal.less" />
+    <Content Include="Content\styleArchives\customized-bootstrap-teal.less" />
+    <Content Include="Areas\Advertisement\Views\web.config" />
+    <Content Include="Areas\Advertisement\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Advertisement\Views\Shared\_AdvertisementListItem.cshtml" />
+    <Content Include="Areas\Advertisement\Views\Listing\Index.cshtml" />
+    <Content Include="Content\Less\common.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -236,6 +245,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Advertisement\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -25,7 +25,11 @@ namespace Klasipik.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/common.css",
+                      "~/Content/footer.css",
+                      "~/Content/navbar-search.css",
+                      "~/Content/banner-full.css",
+                      "~/Content/image-aspect-ratio.css"));
         }
     }
 }
