@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    
+    @Styles.Render("~/Content/cssBundle")
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
@@ -29,7 +29,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-
+                   <li>@Html.ActionLink("Categories", "Index", "Home", new { area = "" }, new { @class = "" })</li> 
                 </ul>
                 @Html.Partial("_LoginPartial")
 
@@ -54,7 +54,7 @@
 
         </div>
     </div>
-    
+    @RenderSection("fullWidthHeading", required: false)
     @RenderSection("fullWidthBanner", required: false)
 
     <div class="container body-content">

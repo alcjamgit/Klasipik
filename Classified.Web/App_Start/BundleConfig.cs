@@ -23,13 +23,18 @@ namespace Classified.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/cssBundle").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/css/font-awesome.css",
                       "~/Content/common.css",
                       "~/Content/footer.css",
                       "~/Content/navbar-search.css",
                       "~/Content/banner-full.css",
+                      "~/Content/search-toolbar.css",
                       "~/Content/image-aspect-ratio.css"));
+
+            BundleTable.EnableOptimizations = false;
         }
+        
     }
 }

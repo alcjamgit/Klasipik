@@ -10,7 +10,7 @@
     position: relative;
     transition: background .2s;
     vertical-align: top;
-    width: calc(100% - 400px);
+    width: calc(100% - 500px);
     /*z-index:1031;*/
 }
 

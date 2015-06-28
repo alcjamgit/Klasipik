@@ -1,4 +1,8 @@
 ﻿
+body {
+    /*background-color:#f1f1f1;*/
+    font-family: 'Roboto', sans-serif;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     margin-top:20px;
@@ -34,8 +38,10 @@
 
 /*End of Fix navbar container height to prevent it from collapsing 2 rows*/
 
-
-
+.no-side-padding{
+    padding-left:0;
+    padding-right:0;
+}
 
 
 
