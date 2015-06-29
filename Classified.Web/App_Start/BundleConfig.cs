@@ -23,6 +23,9 @@ namespace Classified.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                      "~/Scripts/app/main.js"));
+
             bundles.Add(new StyleBundle("~/Content/cssBundle").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/css/font-awesome.css",

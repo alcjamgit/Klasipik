@@ -11,7 +11,7 @@
     transition: background .2s;
     vertical-align: top;
     width: calc(100% - 500px);
-    /*z-index:1031;*/
+    z-index:1031;
 }
 
     .devsite-search-wrapper:hover {
