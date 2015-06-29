@@ -1,0 +1,31 @@
+﻿/*Start of Full width banner*/
+.full-width-container {
+    /*position:relative;*/
+    /*margin: 0 auto;*/
+    width: 100%;
+    color:#fff;
+    /* Set the fixed height of the footer here */
+    /*min-height: 120px;*/
+    background-color: #26A69A;
+
+}
+
+/*End of Full width banner*/
+
+/*Start of Full width banner*/
+.full-width-heading {
+    /*position:relative;*/
+    /*margin: 0 auto;*/
+    padding-top:5px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    background-color: #E0E0E0;
+    border-bottom: solid 1px #d3d3d3
+
+}
+.full-width-heading .breadcrumb{
+    background-color: transparent;
+
+}
+/*End of Full width banner*/
