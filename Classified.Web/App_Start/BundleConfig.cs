@@ -27,7 +27,7 @@ namespace Classified.Web
                       "~/Scripts/app/main.js"));
 
             bundles.Add(new StyleBundle("~/Content/cssBundle").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrapCustom.css",
                       "~/Content/css/font-awesome.css",
                       "~/Content/common.css",
                       "~/Content/footer.css",

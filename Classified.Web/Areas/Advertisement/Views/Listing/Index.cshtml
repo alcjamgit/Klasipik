@@ -8,8 +8,8 @@
                 </div>
                 <div class="col-md-6 col-sm-6 hidden-xs">
                     <ol class=" breadcrumb pull-right">
-                    <li><a href="#">Advertisement</a></li>
-                    <li><a href="#">Search</a></li>
+                        <li><a href="#">Advertisement</a></li>
+                        <li><a href="#">Search</a></li>
                     </ol>
                 </div>
             </div>
@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-md-3 no-padding-left">
             <div class="">
-                <form action="/" method="post" >
+                <form action="/" method="post">
                     <fieldset>
                         <legend>Filters</legend>
                         <div class="form-group">
@@ -40,11 +40,19 @@
         <div class="col-md-9 no-side-padding">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="search-toolbar">
-                        <div class="row">
-                            <div class="col-md-8"></div>
-                            <div class="col-md-4"></div>
-                        </div>
+                    <div class="navbar navbar-default">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <label for="">Sorty By</label>
+                                <select class="form-control">
+                                    <option>Date</option>
+                                    <option>Relevance</option>
+                                    <option>Price</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                        </form>
+
                     </div>
                 </div>
             </div>
