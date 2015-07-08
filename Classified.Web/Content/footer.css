@@ -2,43 +2,30 @@
     http://getbootstrap.com/examples/sticky-footer-navbar/
 -------------------------------------------------- */
 html {
-  position: relative; 
+  position: relative;
   min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
-    margin-bottom: 240px; /*Set this equal to .footer height*/
-    padding-top: 50px;
-    padding-bottom: 20px;
+  margin-bottom: 240px;
+  /*Set this equal to .footer height*/
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
-
 .footer {
-    color:#9E9E9E;
-    position: absolute; /*we'll need to set to absolute on large screens to prevent overlap with main content*/
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 120px;
-    background-color: #424242;
+  color: #9E9E9E;
+  position: absolute;
+  /*we'll need to set to absolute on large screens to prevent overlap with main content*/
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 120px;
+  background-color: #424242;
 }
-
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
   /*Set bg color again to account for white space since we need the footer to be of fixed height*/
   background-color: #424242;
 }
-
-/*This prevents overlap of footer with the main content*/
-/* Small devices (tablets, 992px  and up) */
-/*@media(min-width:992px) {
-    .footer {
-        position: absolute;
-    }
-}*/
-/* Small devices (tablets, 768px and up) */
-/*@media(min-width:768px) {
-    .footer {
-        position: absolute;
-    }
-}*/
+/*# sourceMappingURL=footer.css.map */

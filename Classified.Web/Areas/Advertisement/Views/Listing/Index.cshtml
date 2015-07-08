@@ -1,10 +1,18 @@
-﻿@section fullWidthHeading{
+﻿
+@section styles{
+    <link href="~/Content/bootstrap-select.min.css" rel="stylesheet" />
+    }
+@section scripts{
+<script src="~/Scripts/bootstrap-select.min.js"></script>
+    }
+
+@section fullWidthHeading{
     <div class="full-width-heading">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <h4>Search Results</h4>
-                    @*<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>*@
+
                 </div>
                 <div class="col-md-6 col-sm-6 hidden-xs">
                     <ol class=" breadcrumb pull-right">
@@ -20,7 +28,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3 no-padding-left">
-            <div class="">
+            <div class="well well-sm">
                 <form action="/" method="post">
                     <fieldset>
                         <legend>Filters</legend>
@@ -40,18 +48,12 @@
         <div class="col-md-9 no-side-padding">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="navbar navbar-default">
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group">
-                                <label for="">Sorty By</label>
-                                <select class="form-control">
-                                    <option>Date</option>
-                                    <option>Relevance</option>
-                                    <option>Price</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                        </form>
+                    <div class="well well-sm">
+                        <select class="selectpicker">
+                            <option>Relevance</option>
+                            <option>Price</option>
+                            <option>Date</option>
+                        </select>
 
                     </div>
                 </div>

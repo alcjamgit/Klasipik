@@ -175,24 +175,66 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\banner-full.css">
+      <DependentUpon>banner-full.less</DependentUpon>
+    </Content>
+    <Content Include="Content\banner-full.min.css">
+      <DependentUpon>banner-full.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-custom.css">
       <DependentUpon>bootstrap-custom.less</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-custom.min.css">
       <DependentUpon>bootstrap-custom.css</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-select.css">
+      <DependentUpon>bootstrap-select.less</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-select.min.css">
+      <DependentUpon>bootstrap-select.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-theme.css">
+      <DependentUpon>bootstrap-theme.less</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-theme.min.css">
+      <DependentUpon>bootstrap-theme.css</DependentUpon>
+    </Content>
+    <Content Include="Content\common.css">
+      <DependentUpon>common.less</DependentUpon>
+    </Content>
+    <Content Include="Content\common.min.css">
+      <DependentUpon>common.css</DependentUpon>
+    </Content>
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\footer.css">
+      <DependentUpon>footer.less</DependentUpon>
+    </Content>
+    <Content Include="Content\footer.min.css">
+      <DependentUpon>footer.css</DependentUpon>
+    </Content>
     <Content Include="Content\image-aspect-ratio.css" />
     <Content Include="Content\search-toolbar.css" />
     <Content Include="Content\styleArchives\banner-full.css" />
     <Content Include="Content\styleArchives\bootstrapOld.css" />
     <Content Include="Content\styleArchives\bootstrap.min.css" />
-    <Content Include="Content\footer.css" />
+    <Content Include="Content\footer.css.map">
+      <DependentUpon>footer.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-select\variables.less" />
+    <Content Include="Content\bootstrap-select\bootstrap-select.less" />
+    <Content Include="Content\bootstrap-select.less" />
+    <Content Include="Content\bootstrap-select.css.map">
+      <DependentUpon>bootstrap-select.css</DependentUpon>
+    </Content>
+    <Content Include="Content\common.css.map">
+      <DependentUpon>common.css</DependentUpon>
+    </Content>
+    <None Include="Content\footer.less" />
     <Content Include="Content\navbar-search.css" />
-    <Content Include="Content\common.css" />
+    <None Include="Content\common.less" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\styleArchives\SiteOld.css" />
@@ -257,10 +299,59 @@
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\banner-full.less" />
-    <Content Include="Content\bootstrap-overrides.less" />
+    <Content Include="Content\bootstrap-theme.less" />
+    <Content Include="Content\banner-full.css.map">
+      <DependentUpon>banner-full.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-theme.css.map">
+      <DependentUpon>bootstrap-theme.css</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap-select.js" />
+    <Content Include="Scripts\bootstrap-select.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-bg_BG.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-bg_BG.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-cs_CZ.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-cs_CZ.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-de_DE.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-de_DE.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-en_US.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-en_US.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-es_CL.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-es_CL.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-eu.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-eu.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-fr_FR.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-fr_FR.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-hu_HU.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-hu_HU.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-it_IT.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-it_IT.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-nl_NL.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-nl_NL.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-pl_PL.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-pl_PL.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-pt_BR.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-pt_BR.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-ro_RO.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-ro_RO.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-ru_RU.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-ru_RU.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-sl_SI.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-sl_SI.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-sv_SE.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-sv_SE.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-tr_TR.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-tr_TR.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-ua_UA.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-ua_UA.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-zh_CN.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-zh_CN.min.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-zh_TW.js" />
+    <Content Include="Scripts\i18n\bootstrap-select\defaults-zh_TW.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -313,12 +404,10 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Advertisement\Models\" />
     <Folder Include="Areas\User\Views\Shared\" />
-    <Folder Include="Content\Less\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
