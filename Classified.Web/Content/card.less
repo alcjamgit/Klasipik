@@ -1,4 +1,7 @@
-﻿.maintain-aspect-ratio-4-3
+﻿@import (reference) "bootstrap/variables.less";
+@import (reference) "bootstrap-theme.less";
+
+.maintain-aspect-ratio-4-3
 {
   position: relative;
   height: 0;
@@ -39,15 +42,32 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
 
-.glow-hover:hover
-{
+.glow-hover a {text-decoration:none;}
+.glow-hover a:hover {text-decoration:none;}
+.glow-hover a:visited {text-decoration:none;}
 
-    /*-webkit-box-shadow: 0 0 15px 5px #888888;
-    -moz-box-shadow: 0 0 15px 5px #888888;
-    box-shadow: 0 0 15px 5px #888888;
-    border: none;*/
+
+.card-caption {
+    background-color:#fff;
+    font-weight:500;
 }
 
-.glow-hover :hover {text-decoration:none;}
-.glow-hover :visited {text-decoration:none;}
+.card-caption-header{
+    .card-caption;
+    font-size:17px;
+    margin:0;
+}
 
+.card-caption .caption-text{
+    display:block;
+    color:#5e5e5e;
+    margin-top:4px;
+}
+
+.card-caption .caption-text-light{
+    color:@gray-light;
+    font-size:12px;
+    font-weight:500;
+    display:block;
+    margin-top:4px;
+}

@@ -199,6 +199,12 @@
     <Content Include="Content\bootstrap-theme.min.css">
       <DependentUpon>bootstrap-theme.css</DependentUpon>
     </Content>
+    <Content Include="Content\card.css">
+      <DependentUpon>card.less</DependentUpon>
+    </Content>
+    <Content Include="Content\card.min.css">
+      <DependentUpon>card.css</DependentUpon>
+    </Content>
     <Content Include="Content\common.css">
       <DependentUpon>common.less</DependentUpon>
     </Content>
@@ -216,6 +222,7 @@
       <DependentUpon>footer.css</DependentUpon>
     </Content>
     <Content Include="Content\image-aspect-ratio.css" />
+    <Content Include="Content\images\23251752_2.jpg" />
     <Content Include="Content\search-toolbar.css" />
     <Content Include="Content\styleArchives\banner-full.css" />
     <Content Include="Content\styleArchives\bootstrapOld.css" />
@@ -232,6 +239,12 @@
     <Content Include="Content\common.css.map">
       <DependentUpon>common.css</DependentUpon>
     </Content>
+    <Content Include="Content\card.css.map">
+      <DependentUpon>card.css</DependentUpon>
+    </Content>
+    <None Include="Content\card.less" />
+    <Content Include="Areas\Advertisement\Views\Listing\Card.cshtml" />
+    <Content Include="Areas\Advertisement\Views\Shared\_FilterPanel.cshtml" />
     <None Include="Content\footer.less" />
     <Content Include="Content\navbar-search.css" />
     <None Include="Content\common.less" />
