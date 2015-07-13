@@ -48,7 +48,7 @@
 .card-listing a:visited {text-decoration:none;}
 
 
-@media(min-width:@screen-desktop){
+@media(min-width:@screen-xs){
     .card-listing{
         .glow-hover;
         margin-left: -@grid-gutter-width / 2
@@ -58,11 +58,12 @@
     }
 }
 
-@media(min-width:@screen-tablet){
+@media(max-width:@screen-xs){
     .card-listing{
         .glow-hover;
     }
 }
+
 
 .card-caption {
     background-color:#fff;

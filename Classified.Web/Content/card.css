@@ -40,7 +40,7 @@
 .card-listing a:visited {
   text-decoration: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
   .card-listing {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
@@ -51,7 +51,7 @@
     margin-left: 15px;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 480px) {
   .card-listing {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
     -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
