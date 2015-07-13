@@ -12,25 +12,26 @@
 </head>
 <body>
 
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top shadow">
         <div class="container">
             <div class="navbar-header" style="z-index:10005">
                 <div class="pull-left">
-                    <button type="button" class="navbar-toggle" style="margin-right:0; margin-left: 10px"  data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" style="margin-right:0; margin-left: 10px" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                </div class="pull-left">
+                </div>
                 @Html.ActionLink("K", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-md hidden-lg hidden-sm" })
                 @Html.ActionLink("Klasimo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-xs" })
                 <button class="navbar-btn pull-left btn btn-primary">
-                    <span class="glyphicon glyphicon-plus aria-hidden="true"></span>
-                <span class="hidden-xs">Post Ad</span></button>
+                    <span class="glyphicon glyphicon-plus aria-hidden=" true"></span>
+                    <span class="hidden-xs">Post Ad</span>
+                </button>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                   <li>@Html.ActionLink("Categories", "Index", "Home", new { area = "" }, new { @class = "" })</li> 
+                    <li>@Html.ActionLink("Categories", "Index", "Home", new { area = "" }, new { @class = "" })</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
                 <div class="nav">
@@ -42,18 +43,18 @@
                             <div class="devsite-search-image">
                                 <i class="glyphicon glyphicon-search add-margin-top" style="color:#fff"></i>
                             </div>
-                    
+
                             <div class="devsite-popout devsite-popout-closed">
                                 <div class="devsite-history-container">
                                     <div class="devsite-history-wrapper"><div class="devsite-history-side-column"><div class="devsite-history-icon"></div></div><div class="devsite-history-main-column"><div class="devsite-history-column devsite-nav goog-menu" id="devsite-recent-column" role="menu" aria-haspopup="true" style="-webkit-user-select: none;"><label style="-webkit-user-select: none;">Recent Pages</label><div class="devsite-history-item devsite-nav-label goog-menuitem" role="menuitem" style="-webkit-user-select: none;" id=":0"><div class="goog-menuitem-content" style="-webkit-user-select: none;"><a href="/web/" class="devsite-history-link" style="-webkit-user-select: none;">Build a Great Web Experience</a></div></div><div class="devsite-history-item devsite-nav-label goog-menuitem" role="menuitem" style="-webkit-user-select: none;" id=":3"><div class="goog-menuitem-content" style="-webkit-user-select: none;"><a href="/analytics/devguides/collection/analyticsjs/method-reference" class="devsite-history-link" style="-webkit-user-select: none;">Method Reference - Web Tracking (analytics.js)</a></div></div></div><div class="devsite-history-column devsite-nav goog-menu" id="devsite-frequent-column" role="menu" aria-haspopup="true" style="-webkit-user-select: none;"><label style="-webkit-user-select: none;">Most Visited Pages</label><div class="devsite-history-item devsite-nav-label goog-menuitem" role="menuitem" style="-webkit-user-select: none;" id=":5"><div class="goog-menuitem-content" style="-webkit-user-select: none;"><a href="/analytics/devguides/collection/analyticsjs/" class="devsite-history-link" style="-webkit-user-select: none;">Introduction to Analytics.js</a></div></div><div class="devsite-history-item devsite-nav-label goog-menuitem" role="menuitem" style="-webkit-user-select: none;" id=":6"><div class="goog-menuitem-content" style="-webkit-user-select: none;"><a href="/cloud-test-lab/" class="devsite-history-link" style="-webkit-user-select: none;">Cloud Test Lab</a></div></div><div class="devsite-history-item devsite-nav-label goog-menuitem" role="menuitem" style="-webkit-user-select: none;" id=":7"><div class="goog-menuitem-content" style="-webkit-user-select: none;"><a href="/analytics/devguides/collection/analyticsjs/method-reference" class="devsite-history-link" style="-webkit-user-select: none;">Method Reference - Web Tracking (analytics.js)</a></div></div><div class="devsite-history-item devsite-nav-label goog-menuitem" role="menuitem" style="-webkit-user-select: none;" id=":8"><div class="goog-menuitem-content" style="-webkit-user-select: none;"><a href="/web/" class="devsite-history-link" style="-webkit-user-select: none;">Build a Great Web Experience</a></div></div><div class="devsite-history-item devsite-nav-label goog-menuitem" role="menuitem" style="-webkit-user-select: none;" id=":9"><div class="goog-menuitem-content" style="-webkit-user-select: none;"><a href="/analytics/devguides/collection/analyticsjs/advanced" class="devsite-history-link" style="-webkit-user-select: none;">Advanced Configuration - Web Tracking (analytics.js)</a></div></div></div><div class="devsite-history-footer"><a href="//myaccount.google.com/privacy#accounthistory" class="devsite-history-preferences-link button button-white">History Preferences</a></div></div></div>
                                 </div>
                             </div>
-                       
+
 
                         </form>
                     </div>
                 </div>
-                
+
 
             </div>
 

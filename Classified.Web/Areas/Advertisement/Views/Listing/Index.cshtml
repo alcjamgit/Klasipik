@@ -31,44 +31,28 @@
     </div>
 }*@
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 no-padding-left">
-            @*<div class="well well-sm">
-                <form action="/" method="post">
-                    <fieldset>
-                        <legend>Filters</legend>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Search Keyword</label>
-                            <input type="text" class="form-control" id="keyword" placeholder="Search Keyword">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Price</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
 
-                    </fieldset>
-                </form>
-            </div>*@
-            @Html.Partial("_FilterPanel")
-        </div>
-        <div class="col-md-9 no-side-padding">
-            <div class="well well-sm">
-                <div class="row">
-                    <div class="col-md-9">
-                        <h5>Search Results</h5>
-                    </div>
-                    <div class="col-md-3">
-                        <select class="selectpicker-sort" data-width="auto">
-                            <option>Sort By Relevance</option>
-                            <option>Sort By Price</option>
-                            <option>Sort By Date</option>
-                        </select>
+<div class="row">
+    <div class="col-md-3">
+        @Html.Partial("_FilterPanel")
+    </div>
+    <div class="col-md-9">
+        <div class="well well-sm">
+            <div class="row">
+                <div class="col-md-9">
+                    <h5>Search Results</h5>
+                </div>
+                <div class="col-md-3">
+                    <select class="selectpicker-sort" data-width="auto">
+                        <option>Sort By Relevance</option>
+                        <option>Sort By Price</option>
+                        <option>Sort By Date</option>
+                    </select>
 
-                    </div>
                 </div>
             </div>
-
+        </div>
+        <div class="listing-container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">@Html.Partial("_AdvertisementListItem")</div>
                 <div class="col-md-3 col-sm-6">@Html.Partial("_AdvertisementListItem")</div>
@@ -83,23 +67,8 @@
                 <div class="col-md-3 col-sm-6">@Html.Partial("_AdvertisementListItem")</div>
                 <div class="col-md-3 col-sm-6">@Html.Partial("_AdvertisementListItem")</div>
             </div>
-            @*<div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-                <div class="col-md-3 col-sm-6 col-xs-12">@Html.Partial("Card")</div>
-            </div>*@
         </div>
-
+        
     </div>
+
 </div>

@@ -1,14 +1,15 @@
 ﻿@import (reference) "bootstrap/variables.less";
 @import (reference) "bootstrap-theme.less";
 
+
 .maintain-aspect-ratio-4-3
 {
   position: relative;
   height: 0;
   padding-top: 75%; /*4:3*/
   display: block; 
-
 }
+
 
 /*add this class to the content that will scaled*/
 .maintain-aspect-ratio-4-3 .maintain-aspect-ratio
@@ -27,7 +28,7 @@
 /*add this class to the content that will scaled*/
 .maintain-aspect-ratio-4-3 .img-thumbnail
 {  
-    border:0px;
+    border:0 none;
 }
 
 /* Maintain 100% width of images in smaller screens */
@@ -42,10 +43,26 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
 
-.glow-hover a {text-decoration:none;}
-.glow-hover a:hover {text-decoration:none;}
-.glow-hover a:visited {text-decoration:none;}
+.card-listing a {text-decoration:none;}
+.card-listing a:hover {text-decoration:none;}
+.card-listing a:visited {text-decoration:none;}
 
+
+@media(min-width:@screen-desktop){
+    .card-listing{
+        .glow-hover;
+        margin-left: -@grid-gutter-width / 2
+    }
+    .listing-container{
+        margin-left: @grid-gutter-width / 2;
+    }
+}
+
+@media(min-width:@screen-tablet){
+    .card-listing{
+        .glow-hover;
+    }
+}
 
 .card-caption {
     background-color:#fff;

@@ -19,7 +19,7 @@
 }
 /*add this class to the content that will scaled*/
 .maintain-aspect-ratio-4-3 .img-thumbnail {
-  border: 0px;
+  border: 0 none;
 }
 /* Maintain 100% width of images in smaller screens */
 .full-height-width {
@@ -31,14 +31,32 @@
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
-.glow-hover a {
+.card-listing a {
   text-decoration: none;
 }
-.glow-hover a:hover {
+.card-listing a:hover {
   text-decoration: none;
 }
-.glow-hover a:visited {
+.card-listing a:visited {
   text-decoration: none;
+}
+@media (min-width: 992px) {
+  .card-listing {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    margin-left: -15px;
+  }
+  .listing-container {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .card-listing {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  }
 }
 .card-caption {
   background-color: #fff;

@@ -23,7 +23,8 @@
   padding: 0px;
 }
 /* Fix navbar container height to prevent it from collapsing 2 rows */
-@media (min-width: 767px) {
+/*@media(min-width:767px){*/
+@media (min-width: 768px) {
   .navbar {
     height: 50px;
   }
