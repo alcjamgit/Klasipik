@@ -1,0 +1,51 @@
+﻿@import (reference) "bootstrap/variables.less";
+@import (reference) "bootstrap-theme.less";
+body {
+    background-color:#edecec;
+    font-family: 'Roboto', sans-serif;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top:20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Box shadow for navbar Generated using: http://www.cssmatic.com/box-shadow */
+.shadow {
+    
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column */
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.thumbnail {
+    padding:0px;
+}
+
+/* Fix navbar container height to prevent it from collapsing 2 rows */
+/*@media(min-width:767px){*/
+
+@media(min-width:@screen-tablet){
+    .navbar{
+        height:50px;
+    }
+}
+
+/*End of Fix navbar container height to prevent it from collapsing 2 rows*/
+
+.no-side-padding{
+    padding-left:0;
+    padding-right:0;
+}
+
+.no-padding-left{
+    padding-left:0;
+}
