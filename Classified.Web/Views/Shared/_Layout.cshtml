@@ -8,10 +8,23 @@
     @RenderSection("styles", false)
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     @Scripts.Render("~/bundles/modernizr")
-
+    <style>
+        .searchbar {
+            display:block;
+            top:0;
+            position:fixed;
+            z-index:50000;
+            background-color:blue;
+            margin: 0 auto;
+            height:60px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="searchbar">
+        test
+    </div>
     <div class="navbar navbar-default navbar-fixed-top shadow">
         <div class="container">
             <div class="navbar-header" style="z-index:10005">
