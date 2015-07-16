@@ -30,6 +30,7 @@ namespace Classified.Web
                       "~/Content/bootstrap-custom.css",
                       "~/Content/css/font-awesome.css",
                       "~/Content/common.css",
+                      "~/Content/nav-menu.css",
                       "~/Content/footer.css",
                       "~/Content/navbar-search.css",
                       "~/Content/banner-full.css",

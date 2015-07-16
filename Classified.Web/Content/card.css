@@ -67,6 +67,11 @@
   font-weight: 500;
   font-size: 17px;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 100%;
 }
 .card-caption .caption-text {
   display: block;

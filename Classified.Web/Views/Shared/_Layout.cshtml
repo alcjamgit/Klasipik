@@ -14,20 +14,25 @@
             top:0;
             position:fixed;
             z-index:50000;
-            background-color:blue;
+            background-color:#009688;
             margin: 0 auto;
-            height:60px;
+            height:0;
             width: 100%;
+            /*transition-duration: 0.5s;*/
         }
+            .searchbar:hover {
+                height:50px;
+            }
     </style>
 </head>
 <body>
     <div class="searchbar">
-        test
+        
     </div>
     <div class="navbar navbar-default navbar-fixed-top shadow">
         <div class="container">
-            <div class="navbar-header" style="z-index:10005">
+            <div class="navbar-header">
+
                 <div class="pull-left">
                     <button type="button" class="navbar-toggle" style="margin-right:0; margin-left: 10px" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -35,12 +40,14 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
+
                 @Html.ActionLink("K", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-md hidden-lg hidden-sm" })
                 @Html.ActionLink("Klasimo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-xs" })
-                <button class="navbar-btn pull-left btn btn-primary">
+                <button class="navbar-btn pull-left btn btn-primary" id="blinds">
                     <span class="glyphicon glyphicon-plus aria-hidden=" true"></span>
                     <span class="hidden-xs">Post Ad</span>
                 </button>
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

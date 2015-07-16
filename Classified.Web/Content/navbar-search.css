@@ -194,8 +194,9 @@ input.devsite-search-field:focus {
 
 @media screen and (max-width:1000px) {
     .devsite-search-wrapper {
-        margin-left: 24px;
-        width: calc(100% - 256px);
+        /*This is causing an issue that places the input box into second row*/
+        /*margin-left: 24px;
+        width: calc(100% - 256px);*/
     }
 
     .devsite-search-image {

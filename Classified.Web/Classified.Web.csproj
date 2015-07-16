@@ -223,6 +223,12 @@
     </Content>
     <Content Include="Content\image-aspect-ratio.css" />
     <Content Include="Content\images\23251752_2.jpg" />
+    <Content Include="Content\nav-menu.css">
+      <DependentUpon>nav-menu.less</DependentUpon>
+    </Content>
+    <Content Include="Content\nav-menu.min.css">
+      <DependentUpon>nav-menu.css</DependentUpon>
+    </Content>
     <Content Include="Content\search-toolbar.css" />
     <Content Include="Content\styleArchives\banner-full.css" />
     <Content Include="Content\styleArchives\bootstrapOld.css" />
@@ -321,6 +327,10 @@
     </Content>
     <Content Include="Scripts\bootstrap-select.js" />
     <Content Include="Scripts\bootstrap-select.js.map" />
+    <Content Include="Content\nav-menu.less" />
+    <Content Include="Content\nav-menu.css.map">
+      <DependentUpon>nav-menu.css</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.js" />
