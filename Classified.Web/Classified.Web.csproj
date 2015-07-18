@@ -229,6 +229,7 @@
     <Content Include="Content\nav-menu.min.css">
       <DependentUpon>nav-menu.css</DependentUpon>
     </Content>
+    <Content Include="Content\navbar-search.css" />
     <Content Include="Content\search-toolbar.css" />
     <Content Include="Content\styleArchives\banner-full.css" />
     <Content Include="Content\styleArchives\bootstrapOld.css" />
@@ -252,7 +253,6 @@
     <Content Include="Areas\Advertisement\Views\Listing\Card.cshtml" />
     <Content Include="Areas\Advertisement\Views\Shared\_FilterPanel.cshtml" />
     <None Include="Content\footer.less" />
-    <Content Include="Content\navbar-search.css" />
     <None Include="Content\common.less" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -422,6 +422,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Advertisement\Index.cshtml" />
+    <Content Include="Views\Shared\_PostNewAd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

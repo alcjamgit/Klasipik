@@ -29,12 +29,4 @@
     height: 50px;
   }
 }
-/*End of Fix navbar container height to prevent it from collapsing 2 rows*/
-.no-side-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-.no-padding-left {
-  padding-left: 0;
-}
 /*# sourceMappingURL=common.css.map */

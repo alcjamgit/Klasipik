@@ -22,14 +22,16 @@
     //#endregion
 
     //#region Search Banner
-    $("#blinds").on("click", showSearchBar);
-    $("#blinds").on("focusout", hidSearchBar);
+    $("#search-sm").on("click", showSearchBar);
+    $("#searchbar-close").on("click", hidSearchBar);
+    //$("#search-sm").on("focusout", hidSearchBar);
 
     function showSearchBar() {
-        $(".searchbar").animate({height:"50px"},200)
+        var searchContainer = $("#searchbar").addClass("open");
+        searchContainer.find("input:text:first").focus();
     }
     function hidSearchBar() {
-        $(".searchbar").animate({ height: "0" }, 200)
+        $("#searchbar").removeClass("open");
     }
     //#endregion
 

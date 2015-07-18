@@ -1,4 +1,6 @@
-﻿/* Start of nav Search bar with HTML drop down*/
+﻿
+
+/* Start of nav Search bar with HTML drop down*/
 
 .devsite-search-wrapper {
     background: #4DB6AC;
@@ -10,8 +12,8 @@
     position: relative;
     transition: background .2s;
     vertical-align: top;
-    width: calc(100% - 500px);
-    z-index:1031;
+    width: calc(100% - 600px);
+    z-index: 1031;
 }
 
     .devsite-search-wrapper:hover {
@@ -37,9 +39,11 @@
     transition: background .2s;
     width: 24px;
 }
+
 .add-margin-top {
-    margin-top:3px;
+    margin-top: 3px;
 }
+
 .devsite-search-active .devsite-search-image {
     /*background: url('../images/redesign-14/search-btn-black.svg');*/
 }
@@ -359,4 +363,40 @@ input.devsite-search-field:focus {
     .devsite-suggest-category label {
         font: 14px/22px Roboto,sans-serif;
     }
+}
+
+
+#searchbar {
+    display: block;
+    top: -50px;
+    position: absolute;
+    z-index: 50000;
+    background-color: #009688;
+    margin: 0 auto;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+    #searchbar input {
+        position: absolute;
+        width: calc(100% - 50px);
+    }
+
+#searchbar-close a {
+    color: #004D40;
+    height: 100%;
+}
+
+
+
+#searchbar-close {
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+#searchbar.open {
+    top: 0;
 }

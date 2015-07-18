@@ -1,8 +1,43 @@
-﻿.nav-menu{
-    list-style: none;
-    padding: 0;
+﻿@import (reference) "bootstrap/variables.less";
+@import (reference) "bootstrap/theme.less";
+
+//Nav bar menus that does not collpse on small screens
+.top-menu-wrapper {
+    height: @navbar-height;
+    margin: 0;
 }
 
-.nav-menu>li{
+li.top-menu-item {
     display: inline-block;
+    height: 100%;
+}
+//Account for BS3's dynamic top-padding (15px @ medium, 10px @ small)
+@media(max-width:@screen-sm) {
+    li.top-menu-item a {
+        line-height: 30px;
+    }
+}
+
+//Override BS3's dropdown menu items appearance on smaller screens
+//TODO: need to find a way to do without the !important. 
+//Right now we cannot override the media queries for the dropdown
+@media (max-width: @screen-xs-max ) {
+    .non-collapse {
+        position: absolute !important;
+        float: left !important;
+        width: auto !important;
+        background-color: @dropdown-bg !important;
+        border: 1px solid @dropdown-border !important;
+        .box-shadow(0 6px 12px rgba(0,0,0,.175)) !important;
+        
+        & a{
+            color:@dropdown-link-color !important;
+            line-height: @line-height-base !important;
+        }
+        & a:hover, a:focus {
+            color: @dropdown-link-hover-color !important;
+            background-color: @dropdown-link-hover-bg !important;
+        }
+
+    }
 }

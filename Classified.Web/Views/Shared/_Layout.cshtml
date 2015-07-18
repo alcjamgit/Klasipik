@@ -8,31 +8,18 @@
     @RenderSection("styles", false)
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     @Scripts.Render("~/bundles/modernizr")
-    <style>
-        .searchbar {
-            display:block;
-            top:0;
-            position:fixed;
-            z-index:50000;
-            background-color:#009688;
-            margin: 0 auto;
-            height:0;
-            width: 100%;
-            /*transition-duration: 0.5s;*/
-        }
-            .searchbar:hover {
-                height:50px;
-            }
-    </style>
 </head>
 <body>
-    <div class="searchbar">
-        
+    <div id="searchbar">
+        <input type="text" value="" class="form-control" />
+        <div id="searchbar-close" class="pull-right">
+            <a href="#"><i class="fa fa-close"></i></a>
+        </div>
+
     </div>
     <div class="navbar navbar-default navbar-fixed-top shadow">
         <div class="container">
             <div class="navbar-header">
-
                 <div class="pull-left">
                     <button type="button" class="navbar-toggle" style="margin-right:0; margin-left: 10px" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -41,19 +28,29 @@
                     </button>
                 </div>
 
-                @Html.ActionLink("K", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-md hidden-lg hidden-sm" })
-                @Html.ActionLink("Klasimo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand hidden-xs" })
-                <button class="navbar-btn pull-left btn btn-primary" id="blinds">
-                    <span class="glyphicon glyphicon-plus aria-hidden=" true"></span>
-                    <span class="hidden-xs">Post Ad</span>
-                </button>
-
+                @Html.ActionLink("Klasimo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <ul class="nav navbar-nav pull-right top-menu-wrapper" id="search">
+                    <li class="top-menu-item hidden-md"><a href="#" id="search-sm"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+                    <li class="top-menu-item"><a href="#" data-toggle="modal" data-target="#post-ad-modal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
+                    <li class="top-menu-item">
+                        <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right non-collapse" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Categories", "Index", "Home", new { area = "" }, new { @class = "" })</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                @*@Html.Partial("_LoginPartial")*@
                 <div class="devsite-search-wrapper devsite-history-enabled">
                     <form class="devsite-search-form" action="" method="GET" id="top-search">
                         <div id="searchbox" class="devsite-searchbox">
@@ -81,7 +78,7 @@
     @RenderSection("fullWidthBanner", required: false)
 
     <div class="container body-content">
-        @RenderBody() 
+        @RenderBody()
     </div>
     <footer class="footer">
         <div class="container">
@@ -101,6 +98,7 @@
             </div>
         </div>
     </footer>
+    @Html.Partial("~/Views/Shared/_PostNewAd.cshtml")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/app")
