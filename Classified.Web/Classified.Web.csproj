@@ -425,6 +425,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Advertisement\Index.cshtml" />
     <Content Include="Areas\Advertisement\Views\Shared\_PostNewAd.cshtml" />
+    <Content Include="Views\Shared\_NavigationBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

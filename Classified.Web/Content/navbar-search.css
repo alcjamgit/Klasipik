@@ -239,7 +239,8 @@ input.devsite-search-field:focus {
     box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
     margin-top: 10px;
     max-height: calc(100vh - 56px);
-    overflow-y: auto;
+    /*Overridden overflow to allow bootstrap select to expand outside the container*/
+    /*overflow-y: auto;*/
     position: absolute;
     transition: transform .2s,visibility .2s;
     transform: translateY(0);
