@@ -11,12 +11,14 @@
         {
             $(".devsite-popout").addClass("devsite-popout-closed");
             $(".devsite-search-wrapper").removeClass("devsite-search-active");
+            $(".devsite-search-image").removeClass("active");
         }
     });
 
     $(".devsite-search-query").bind("focus", function () {
         $(".devsite-search-wrapper").addClass("devsite-search-active");
         $(".devsite-popout").removeClass("devsite-popout-closed");
+        $(".devsite-search-image").addClass("active");
     });
 
     //#endregion

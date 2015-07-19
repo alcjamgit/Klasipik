@@ -21,6 +21,7 @@ namespace Classified.Web
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap-select.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
@@ -28,6 +29,7 @@ namespace Classified.Web
 
             bundles.Add(new StyleBundle("~/Content/cssBundle").Include(
                       "~/Content/bootstrap-custom.css",
+                      "~/Content/bootstrap-select.css",
                       "~/Content/css/font-awesome.css",
                       "~/Content/common.css",
                       "~/Content/nav-menu.css",

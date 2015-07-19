@@ -249,6 +249,7 @@
     <Content Include="Content\card.css.map">
       <DependentUpon>card.css</DependentUpon>
     </Content>
+    <Content Include="Areas\User\Views\Account\LoginModal.cshtml" />
     <None Include="Content\card.less" />
     <Content Include="Areas\Advertisement\Views\Listing\Card.cshtml" />
     <Content Include="Areas\Advertisement\Views\Shared\_FilterPanel.cshtml" />
@@ -331,6 +332,7 @@
     <Content Include="Content\nav-menu.css.map">
       <DependentUpon>nav-menu.css</DependentUpon>
     </Content>
+    <Content Include="Content\playground.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -422,7 +424,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Advertisement\Index.cshtml" />
-    <Content Include="Views\Shared\_PostNewAd.cshtml" />
+    <Content Include="Areas\Advertisement\Views\Shared\_PostNewAd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
