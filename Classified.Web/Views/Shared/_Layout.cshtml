@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app ="App">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,9 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div id="searchbar">
-        <input type="text" value="" class="form-control" />
+    <div id="searchbar" ng-controller="searchController as searchCtrl">
+        <input type="text" value="" ng-model="searchCtrl.keyword" class="form-control" ng-click="searchCtrl.onClick()">
+        
         <div id="searchbar-close" class="pull-right">
             <a href="#"><i class="fa fa-close"></i></a>
         </div>
@@ -48,6 +49,7 @@
     @Html.Partial("~/Areas/Advertisement/Views/Shared/_PostNewAd.cshtml")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/app")
     @RenderSection("scripts", required: false)
 </body>

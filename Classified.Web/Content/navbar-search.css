@@ -112,67 +112,7 @@ input.devsite-search-field:focus {
     color: #757575;
 }
 
-/*.devsite-search-chip {
-    border: 1px solid rgba(255,255,255,.4);
-    border-radius: 15px;
-    color: #fff;
-    cursor: default;
-    display: inline-block;
-    float: left;
-    font: 13px/28px Roboto,sans-serif;
-    height: 30px;
-    margin: 3px 0 0 64px;
-    max-width: 200px;
-    overflow: hidden;
-    padding: 0 8px 0 12px;
-    position: relative;
-    text-overflow: ellipsis;
-    transition: background .2s,border .2s,color .2s;
-    white-space: nowrap;
-}*/
 
-/*.devsite-search-active .devsite-search-chip {
-    background: #ebebeb;
-    border-color: transparent;
-    color: #616161;
-}*/
-
-/*.devsite-search-chip-close {
-    background: url('../images/redesign-14/cancel.svg'),url('../images/redesign-14/cancel-grey.svg') 20px no-repeat;
-    cursor: pointer;
-    display: block;
-    height: 20px;
-    margin: 4px -4px 0 0;
-    opacity: .54;
-    position: absolute;
-    right: 8px;
-    top: 0;
-    transition: background .2s,opacity .2s;
-    width: 20px;
-}
-
-.devsite-search-chip::before {
-    content: "";
-    float: right;
-    height: 20px;
-    margin: 4px -4px 0 0;
-    width: 20px;
-}
-
-.devsite-search-active .devsite-search-chip::before {
-    /*background: url('../images/redesign-14/cancel-grey.svg');*/
-    opacity: .65;
-}
-
-.devsite-search-chip::after {
-    content: "";
-    margin-left: 8px;
-}
-
-.devsite-search-chip + .devsite-search-field {
-    padding-left: 16px;
-    width: calc(100% - 264px);
-}*/
 
 .devsite-search-button {
     /*background: url('../images/redesign-14/search-btn-white.svg'),url('../images/redesign-14/cancel.svg') 24px transparent no-repeat;*/
@@ -187,15 +127,7 @@ input.devsite-search-field:focus {
     width: 24px;
 }
 
-/*.devsite-search-button-dismissal {
-    
-    margin: 6px 0;
-}
 
-.devsite-search-button:focus, .devsite-search-button:hover:not(:disabled), .devsite-search-button:active:not(:disabled) {
-    background-color: transparent;
-    opacity: 1;
-}*/
 
 @media screen and (max-width:1000px) {
     .devsite-search-wrapper {

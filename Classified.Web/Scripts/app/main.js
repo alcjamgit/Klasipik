@@ -1,5 +1,20 @@
 ﻿(function () {
 
+    angular.module('App', []).
+        controller('searchController', searchController);
+
+    
+    function searchController($scope) {
+        $scope.firstName = "John";
+        var vm = this;
+        vm.keyword = "pants";
+        vm.onClick = onClick;
+
+        function onClick() {
+            alert("Hola mundo! " + vm.keyword);
+        }
+    }
+
     //#region Search Bar Popup
     //Hide search bar pop out on blur of the search box, except when the next focus is the popout
     //http://stackoverflow.com/questions/8973532/blur-vs-focusout-any-real-differences

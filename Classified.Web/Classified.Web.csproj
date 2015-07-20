@@ -258,6 +258,11 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\styleArchives\SiteOld.css" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\app\main.js" />
     <Content Include="Content\styleArchives\customized-bootstrap-teal.less" />
     <Content Include="Areas\Advertisement\Views\web.config" />
@@ -333,6 +338,8 @@
       <DependentUpon>nav-menu.css</DependentUpon>
     </Content>
     <Content Include="Content\playground.less" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.js" />
